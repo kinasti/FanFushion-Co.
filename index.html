@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MerchFusion Co.</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MerchFusion Co.</h1>
+        <nav>
+            <a href="#home">Beranda</a>
+            <a href="#products">Produk</a>
+            <a href="#collaborations">Kolaborasi</a>
+            <a href="#personalization">Personalisasi</a>
+            <a href="#about">Tentang Kami</a>
+            <a href="#contact">Kontak</a>
+            <a href="#account">Akun Saya</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Kolaborasi Merchandise Resmi</h1>
+        </section>
+        <div class="container">
+            <section id="products">
+                <h2>Produk Populer</h2>
+                <div class="products">
+                    <div class="product">
+                        <img src="product1.jpg" alt="Product 1">
+                        <h3>Produk 1</h3>
+                        <p>Deskripsi singkat produk 1.</p>
+                        <button onclick="addToCart('Produk 1')">Tambahkan ke Keranjang</button>
+                    </div>
+                    <div class="product">
+                        <img src="product2.jpg" alt="Product 2">
+                        <h3>Produk 2</h3>
+                        <p>Deskripsi singkat produk 2.</p>
+                        <button onclick="addToCart('Produk 2')">Tambahkan ke Keranjang</button>
+                    </div>
+                    <div class="product">
+                        <img src="product3.jpg" alt="Product 3">
+                        <h3>Produk 3</h3>
+                        <p>Deskripsi singkat produk 3.</p>
+                        <button onclick="addToCart('Produk 3')">Tambahkan ke Keranjang</button>
+                    </div>
+                    <div class="product">
+                        <img src="product4.jpg" alt="Product 4">
+                        <h3>Produk 4</h3>
+                        <p>Deskripsi singkat produk 4.</p>
+                        <button onclick="addToCart('Produk 4')">Tambahkan ke Keranjang</button>
+                    </div>
+                </div>
+            </section>
+            <section id="collaborations">
+                <h2>Kolaborasi Terbaru</h2>
+                <div class="collaborations">
+                    <div class="collaboration">
+                        <img src="collab1.jpg" alt="Collaboration 1">
+                        <h3>Kolaborasi 1</h3>
+                        <p>Deskripsi singkat kolaborasi 1.</p>
+                    </div>
+                    <div class="collaboration">
+                        <img src="collab2.jpg" alt="Collaboration 2">
+                        <h3>Kolaborasi 2</h3>
+                        <p>Deskripsi singkat kolaborasi 2.</p>
+                    </div>
+                    <div class="collaboration">
+                        <img src="collab3.jpg" alt="Collaboration 3">
+                        <h3>Kolaborasi 3</h3>
+                        <p>Deskripsi singkat kolaborasi 3.</p>
+                    </div>
+                    <div class="collaboration">
+                        <img src="collab4.jpg" alt="Collaboration 4">
+                        <h3>Kolaborasi 4</h3>
+                        <p>Deskripsi singkat kolaborasi 4.</p>
+                    </div>
+                </div>
+            </section>
+            <section id="personalization">
+                <h2>Personalisasi Merchandise</h2>
+                <p>Buat merchandise Anda sendiri dengan opsi kustomisasi kami. Unggah desain Anda sendiri atau pilih dari template yang kami sediakan.</p>
+                <form id="personalization-form" onsubmit="return submitDesign()">
+                    <label for="design">Unggah Desain Anda:</label>
+                    <input type="file" id="design" name="design" accept="image/*" required>
+                    <label for="message">Pesan Khusus:</label>
+                    <input type="text" id="message" name="message" placeholder="Masukkan pesan khusus">
+                    <button type="submit">Unggah Desain</button>
+                </form>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 MerchFusion Co. All rights reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
